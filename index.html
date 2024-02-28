@@ -4,8 +4,8 @@
         <meta name="viewport"
         content="width=device-width,
         initial-scale=1.0">
-		<title>portfolio</title>
-		<link rel="icon" type="icon" href="layout/Logo.png">
+		<title>LeoGylseth</title>
+		<link rel="icon" type="icon" href="Images/layout/WebLogo.png">
     </head>
 <!-- style -->
 <style>
@@ -95,7 +95,6 @@ body {
   }
 }
 
-}
 	<!-- menutop end -->
 
 	<!-- Extra menu -->
@@ -134,6 +133,7 @@ html {
 
 .container {
   padding: 0 16px;
+  background-color: #F1F1F1;
 }
 
 .container::after, .row::after {
@@ -244,9 +244,9 @@ html {
 /* Container for image text */
 .caption-container {
   text-align: center;
-  background-color: #222;
+  background-color: #F1F1F1;
   padding: 2px 16px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .row:after {
@@ -256,9 +256,53 @@ html {
 }
 
 /* Six columns side by side */
+
 .column {
   float: left;
   width: 16.66%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column {
+  float: left;
+  width: 25%;
+  }
+  .prev,
+  .next {
+  top: 30%;
+  margin-top: -50px;
+  }
+}
+
+  @media screen and (max-width: 700px) {
+  .column {
+  float: left;
+  width: 40%;
+  }
+  .prev,
+  .next {
+  top: 20%;
+  margin-top: -50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+  float: left;
+  width: 40%;
+  }
+}
+
+  @media screen and (max-width: 500px) {
+  .logobig {
+	width: auto;
+	height: 0px;
+  }
+  .prev,
+  .next {
+  top: 20%;
+  margin-top: -50px;
+  }
 }
 
 /* Add a transparency effect for thumnbail images */
@@ -320,7 +364,7 @@ function showSlides(n) {
   
   <div class="header-right">
     <a href="mailto: Leosebastiangylseth@gmail.com">Contact</a>
-    <a href="#OurTeam">About</a>
+    <a href="#Aboutme">About</a>
   </div>
 
 </div>
@@ -334,15 +378,21 @@ function showSlides(n) {
 	<center>
 	<a class="active" href="#home">Home</a>
 	<a href="Blender">Blender</a>
-	<a href="#home">Home</a>
-	<a href="#home">Home</a>
-	<a href="#home">Home</a>
 	</center>
   </center>
 </div>
 
 </body>
 <!-- top menu end-->
+
+<!-- about start-->
+
+<div class="scroll-page" id="Aboutme"></div>
+  <div>
+    
+  </div>
+
+<!-- about end-->
 
 <!-- slideshow menu -->
 		<!-- Container for the image gallery -->
@@ -376,17 +426,17 @@ function showSlides(n) {
 
 		  <div class="mySlides">
 			<div class="numbertext">4 / 6</div>
-			  <img src="Images/blender/portefoljeNail.png" style="width:100%">
-		  </div>
-
-		  <div class="mySlides">
-			<div class="numbertext">5 / 6</div>
 			  <img src="Images/blender/Darkknight.jpg" style="width:100%">
 		  </div>
 
 		  <div class="mySlides">
+			<div class="numbertext">5 / 6</div>
+			  <img src="Images/blender/Moresoon.png" style="width:100%">
+		  </div>
+
+		  <div class="mySlides">
 			<div class="numbertext">6 / 6</div>
-			  <img src="Images/blender/portefoljeNail.png" style="width:100%">
+			  <img src="Images/blender/Moresoon.png" style="width:100%">
 		  </div>
 
 		  <!-- Next and previous buttons -->
@@ -407,16 +457,16 @@ function showSlides(n) {
 			  <img class="demo cursor" src="Images/blender/CamNail.png" style="width:100%" onclick="currentSlide(2)" alt="ITM">
 			</div>
 			<div class="column">
-			  <img class="demo cursor" src="Images/blender/outofboundsNail.png" style="width:100%" onclick="currentSlide(3)" alt="test">
+			  <img class="demo cursor" src="Images/blender/outofboundsNail.png" style="width:100%" onclick="currentSlide(3)" alt="Out of bounds">
+			</div>
+      <div class="column">
+			  <img class="demo cursor" src="Images/blender/DarkknightNail.png" style="width:100%" onclick="currentSlide(4)" alt="Dark knight">
 			</div>
 			<div class="column">
-			  <img class="demo cursor" src="Images/blender/outofboundsNail.png" style="width:100%" onclick="currentSlide(4)" alt="test">
+			  <img class="demo cursor" src="Images/blender/Moresoon.png" style="width:100%" onclick="currentSlide(5)" alt="More soon">
 			</div>
 			<div class="column">
-			  <img class="demo cursor" src="Images/blender/Darkknight.jpg" style="width:100%" onclick="currentSlide(5)" alt="Dark knight">
-			</div>
-			<div class="column">
-			  <img class="demo cursor" src="Images/blender/outofboundsNail.png" style="width:100%" onclick="currentSlide(6)" alt="test">
+			  <img class="demo cursor" src="Images/blender/Moresoon.png" style="width:100%" onclick="currentSlide(6)" alt="More soon">
 			</div>
 		  </div>
 		</div>
