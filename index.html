@@ -163,18 +163,37 @@ html {
 }
 
 
-#boks1 {
-	height: auto;
-	width: 100%;
-	background-color:#F1F1F1;
-	margin-bottom: 10px;
-	margin-top: 15px;
-}
 #boks2 {
 	height: auto;
 	width: auto;
 	background-color:white;
 }
+
+.collapsible {
+  background-color: #5c76cc;
+  color: white;
+  margin-top: 5px;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #465EAB;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
 	<!-- Extra menu end -->
 	
 	<!-- slideshow menu -->	
@@ -376,8 +395,8 @@ function showSlides(n) {
 </div>
 <div class="header">
 	<center>
-	<a class="active" href="#home">Home</a>
-	<a href="Blender">Blender</a>
+	<a class="active" href="index.html">Home</a>
+	<a href="Blender.html">Blender</a>
 	</center>
   </center>
 </div>
@@ -385,14 +404,6 @@ function showSlides(n) {
 </body>
 <!-- top menu end-->
 
-<!-- about start-->
-
-<div class="scroll-page" id="Aboutme"></div>
-  <div>
-    
-  </div>
-
-<!-- about end-->
 
 <!-- slideshow menu -->
 		<!-- Container for the image gallery -->
@@ -403,30 +414,27 @@ function showSlides(n) {
 		  <div class="mySlides">
 			<div class="numbertext">1 / 6</div>
 			   <video width="100%" controls>
-					 <source src="Images/blender/portefoljeanimaiton.mp4" type="video/mp4">
+					 <source src="Images/Medie/VarderVideo.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
 		  </div>
 
 		  <div class="mySlides">
 			<div class="numbertext">2 / 6</div>
-			   <video width="100%" controls loop>
-					 <source src="Images/blender/Camvideoitmloop.mp4" type="video/mp4">
+      <video width="100%" controls>
+					 <source src="Images/Medie/powerAD.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
 		  </div>
 
 		  <div class="mySlides">
 			<div class="numbertext">3 / 6</div>
-				  <video width="100%" controls>
-					 <source src="Images/blender/Outofbounds.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
+			  <img src="Images/blender/Moresoon.png" style="width:100%">
 		  </div>
 
 		  <div class="mySlides">
 			<div class="numbertext">4 / 6</div>
-			  <img src="Images/blender/Darkknight.jpg" style="width:100%">
+			  <img src="Images/blender/Moresoon.png" style="width:100%">
 		  </div>
 
 		  <div class="mySlides">
@@ -451,16 +459,16 @@ function showSlides(n) {
 		  <!-- Thumbnail images -->
 		  <div class="row">
 			<div class="column">
-			  <img class="demo cursor" src="Images/blender/portefoljeNail.png" style="width:100%" onclick="currentSlide(1)" alt="Portfolio">
+			  <img class="demo cursor" src="Images/Medie/VarderNail.png" style="width:100%" onclick="currentSlide(1)" alt="Varder">
 			</div>
 			<div class="column">
-			  <img class="demo cursor" src="Images/blender/CamNail.png" style="width:100%" onclick="currentSlide(2)" alt="ITM">
+			  <img class="demo cursor" src="Images/Medie/PowerNail.png" style="width:100%" onclick="currentSlide(2)" alt="PowerAD">
 			</div>
 			<div class="column">
-			  <img class="demo cursor" src="Images/blender/outofboundsNail.png" style="width:100%" onclick="currentSlide(3)" alt="Out of bounds">
+			  <img class="demo cursor" src="Images/blender/Moresoon.png" style="width:100%" onclick="currentSlide(3)" alt="More soon">
 			</div>
       <div class="column">
-			  <img class="demo cursor" src="Images/blender/DarkknightNail.png" style="width:100%" onclick="currentSlide(4)" alt="Dark knight">
+			  <img class="demo cursor" src="Images/blender/Moresoon.png" style="width:100%" onclick="currentSlide(4)" alt="More soon">
 			</div>
 			<div class="column">
 			  <img class="demo cursor" src="Images/blender/Moresoon.png" style="width:100%" onclick="currentSlide(5)" alt="More soon">
@@ -472,6 +480,73 @@ function showSlides(n) {
 		</div>
 		</center>
 <!-- slideshow menu end-->
+
+<!-- about start-->
+
+<div class="scroll-page" id="Aboutme"></div>
+  <center>
+    <h1>Erfaring</h1>	
+  </center>
+
+<button class="collapsible">Storybold</button>
+<div class="content">
+  <h2><a href="https://www.storybold.no" target=””>Storybold</a> januar 2024 – nå</h2>
+    <p>•	God kjennskap til Adobe-programmer, inkludert Photoshop, After Effect og InDesign</p>
+    <p>•	Erfaring med å jobbe med både team og på egenhånd </p>
+    <p>•	Erfaring med å kommunisere med kunder og teamet</p>
+    <p>•	Erfaring fra Storybold i faget Yrkesfaglig fordypning</p>
+    <p>•	Har bistått med blender I prosjekt for Storybold</p>
+</div>
+
+<button class="collapsible">Generasjon-M</button>
+<div class="content">
+  <h2><a href="https://generasjonm.no" target=””>Generasjon-M</a> sep 2021 – nå</h2>
+  <p>•	Erfaring med å jobbe på gamle hjem, god til å snakke med eldre å finne på morsomme ting</p>
+  <p>•	Erfaring med å jobbe med både team og på egenhånd</p> 
+  <p>•	Erfaring med å ha arbeids uke på barneskole </p>
+  <p>•	Erfaring med å kommunisere med kunder og teamet</p>
+
+</div>
+
+<button class="collapsible">Utdanning</button>
+<div class="content">
+
+<h2>Hoppern ungdomsskole</h2>
+<p>Valgfag 8-10 trinn: teknologi og praksis</p>
+
+<h2>Kirkeparken videregående</h2>
+<p>Informasjonsteknologi og mediefag: Yrkesfag. Vg1, 2022-2023</p>
+<p>Medieproduksjon Vg2, 2023-2024</p>
+</div>
+
+<button class="collapsible">Annet</button>
+<div class="content">
+      <h2>Språk: Engelsk og Norsk</h2>
+    <p>Norsk morsmål</p>
+    <p>Engelsk muntlig og skriftlig</p>
+
+    <h3>Data</h3>
+    <p>Har jobbet mye i Adobe Photoshop, After Effects, FLStudio, Blender og er godt kjent med Microsoft Office-programmene.</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<!-- about end-->
 
 <!-- extra menu -->
 <body>
